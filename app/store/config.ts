@@ -23,8 +23,8 @@ export enum Theme {
 export const DEFAULT_CONFIG = {
   submitKey: SubmitKey.CtrlEnter as SubmitKey,
   avatar: "1f603",
-  fontSize: 14,
-  theme: Theme.Auto as Theme,
+  fontSize: 15,
+  theme: Theme.Light as Theme,
   tightBorder: !!getClientConfig()?.isApp,
   sendPreviewBubble: true,
   sidebarWidth: 300,
@@ -156,14 +156,14 @@ export const useAppConfig = create<ChatConfigStore>()(
           state.modelConfig.historyMessageCount = 4;
           state.modelConfig.compressMessageLengthThreshold = 1000;
           state.modelConfig.frequency_penalty = 0;
-          state.modelConfig.top_p = 1;
+          state.modelConfig.top_p = 0;
           state.modelConfig.template = DEFAULT_INPUT_TEMPLATE;
           state.dontShowMaskSplashScreen = false;
           state.hideBuiltinMasks = false;
         }
 
         if (version < 3.5) {
-          state.customModels = "claude,claude-100k";
+          state.customModels = "claude-instant-1,claude-2";
         }
 
         if (version < 3.6) {
