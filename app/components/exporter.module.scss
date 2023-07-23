@@ -105,7 +105,7 @@
     border-radius: 10px;
     padding: 20px;
     box-shadow: var(--card-shadow) inset;
-    background-color: var(--gray);
+    background-color: var(--white);
 
     .chat-info {
       background-color: var(--second);
@@ -117,27 +117,27 @@
       align-items: flex-end;
       position: relative;
       overflow: hidden;
+      box-shadow: var(--card-shadow);
 
-      @media screen and (max-width: 600px) {
-        flex-direction: column;
-        align-items: flex-start;
-
-        .icons {
-          margin-bottom: 20px;
-        }
-      }
-
+      
       .logo {
         position: absolute;
         top: 0px;
         left: 0px;
         height: 50%;
         transform: scale(1.5);
+        opacity: 0.1;
+      }
+
+      .gpt-logo {
+        margin-right: 0px;
+        margin-top: 0px;
       }
 
       .main-title {
-        font-size: 20px;
+        font-size: 30px;
         font-weight: bolder;
+        color: var(--primary);
       }
 
       .sub-title {
@@ -182,9 +182,9 @@
       .body {
         border-radius: 10px;
         padding: 8px 10px;
-        max-width: calc(100% - 104px);
+        max-width: calc(100% - 20px);
         box-shadow: var(--card-shadow);
-        border: var(--border-in-light);
+        /*border: var(--border-in-light);*/
 
         *:not(li) {
           overflow: hidden;
@@ -193,7 +193,7 @@
 
       &-assistant {
         .body {
-          background-color: var(--white);
+          background-color: var(--gray);
         }
       }
 
@@ -206,6 +206,7 @@
 
         .body {
           background-color: var(--second);
+          box-shadow: var(--card-shadow);
           margin-right: 10px;
         }
       }
