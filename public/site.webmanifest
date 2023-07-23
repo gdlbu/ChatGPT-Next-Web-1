@@ -1,6 +1,6 @@
 {
-    "name": "ChatGPT Next Web",
-    "short_name": "ChatGPT",
+    "name": "gpt.tt",
+    "short_name": "gpt.tt",
     "icons": [
       {
         "src": "/android-chrome-192x192.png",
@@ -14,8 +14,8 @@
       }
     ],
     "start_url": "/",
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
+    "theme_color": "#efede6",
+    "background_color": "#efede6",
     "display": "standalone"
   }
   
