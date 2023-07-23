@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     maximumScale: 1,
   },
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: var(--white) },
-    { media: "(prefers-color-scheme: dark)", color: var(--white) },
+    { media: "(prefers-color-scheme: light)", color: "#efede6" },
+    { media: "(prefers-color-scheme: dark)", color: "#181c1f" },
   ],
   appleWebApp: {
     title: "gpt.tt",
